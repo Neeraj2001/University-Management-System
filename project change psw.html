@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change password</title>
+	<script type="text/javascript">
+		function pass()
+		{
+			var p=document.getElementById("p").value;
+			var rp=document.getElementById("rp").value;
+			if(p!=rp)
+			{
+				alert("password is not Matched");
+			}
+			else
+			{
+				alert("Password is Successfully Changed");
+			}
+			//	formaction("C:\Users\Madhuri\Documents\HTML\PROJECT.html");
+			
+		
+			}
+		
+	</script>
+	<style>
+	.p{
+		font-family: italic;
+		color: red;
+		font-weight: normal;
+       text-align: center;
+       
+	}
+	.fh{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+</style>
+</head>
+<body class="fh" background="C:\Users\Madhuri\Documents\HTML\tile 2.jpg">
+	<form onsubmit="pass()" >
+	<table align="center">
+		<tr><th colspan="2" >Change Password</th></tr>
+		<tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogin Name&nbsp:&nbsp</td><td>11801545</td></tr>
+		<tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOld Password&nbsp:&nbsp </td><td><input type="Password" name="Password" required=""></td></tr>
+		<tr><td>&nbsp&nbsp&nbsp&nbsp&nbspNew Password&nbsp:&nbsp </td><td><input type="Password"  id="p" required="" name="new Password"></td></tr>
+		<tr><td>Confirm Password&nbsp:&nbsp </td><td><input type="Password" id="rp" required="" name="confirm Password"></td></tr>
+		<br><br><br><br>
+		<tr><th><input type="submit" value="Change Password"  name="password"></th>
+		</form><form><th><input type="submit" value="Return to Home page"   name="" formaction="C:\Users\Madhuri\Documents\HTML\PROJECT.html" ></th></tr>
+	</table>
+	</form>
+
+<p class="p">NOTE:Password must be at least 6 characters and must include at least one upper case letter,one lower casev letter,one number digit and special character(@#$%^&*)<br> e.g 45$%AVf </p>
+</body>
+</html>
